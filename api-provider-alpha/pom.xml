@@ -141,7 +141,7 @@
 		<!-- TWA -->
 		<dependency>
 			<groupId>com.twa.flights</groupId>
-			<artifactId>flights-common-dto</artifactId>
+			<artifactId>commons-dto</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
