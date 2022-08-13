@@ -1,0 +1,4 @@
+com/twa/flights/api/catalog/configuration/SwaggerConfigurationTest.class
+com/twa/flights/api/catalog/controller/DocumentationControllerTest.class
+com/twa/flights/api/catalog/configuration/MapperFacadeConfigurationTest.class
+com/twa/flights/api/catalog/controller/CatalogControllerTest.class

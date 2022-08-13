@@ -1,0 +1,8 @@
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/configuration/MapperFacadeConfigurationTest.java
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/architecture/general/GeneralCodingRulesTest.java
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/architecture/general/CommonArchRules.java
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/architecture/general/ArchitectureConstants.java
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/architecture/layers/ResourcesRulesTest.java
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/architecture/layers/ControllerRulesTest.java
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/controller/DocumentationControllerTest.java
+/Users/mykhailo.skliar/git/movies-online-testing/api-clusters/src/test/java/com/twa/flights/api/clusters/configuration/SwaggerConfigurationTest.java

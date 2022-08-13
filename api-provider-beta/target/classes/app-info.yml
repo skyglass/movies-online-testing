@@ -1,0 +1,5 @@
+build:
+  groupId: 'com.twa.flights'
+  artifactId: 'api-provider-beta'
+  version: '0.0.1-SNAPSHOT'
+  appName: 'api-provider-beta'

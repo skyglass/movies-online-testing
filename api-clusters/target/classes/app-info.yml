@@ -1,0 +1,5 @@
+build:
+  groupId: 'com.twa.flights'
+  artifactId: 'api-clusters'
+  version: '0.0.1-SNAPSHOT'
+  appName: 'api-clusters'

@@ -1,0 +1,101 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "com.twa.flights.api.clusters.configuration.RedisConfiguration",
+      "sourceType": "com.twa.flights.api.clusters.configuration.RedisConfiguration"
+    },
+    {
+      "name": "connector.catalog",
+      "type": "com.twa.flights.api.clusters.connector.configuration.CatalogConnectorConfiguration",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.CatalogConnectorConfiguration"
+    },
+    {
+      "name": "connector.itineraries-search",
+      "type": "com.twa.flights.api.clusters.connector.configuration.ItinerariesSearchConnectorConfiguration",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.ItinerariesSearchConnectorConfiguration"
+    },
+    {
+      "name": "connector.pricing",
+      "type": "com.twa.flights.api.clusters.connector.configuration.PricingConnectorConfiguration",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.PricingConnectorConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "connector.catalog.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.CatalogConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.catalog.host",
+      "type": "java.lang.String",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.CatalogConnectorConfiguration"
+    },
+    {
+      "name": "connector.catalog.read-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.CatalogConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.catalog.response-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.CatalogConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.itineraries-search.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.ItinerariesSearchConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.itineraries-search.host",
+      "type": "java.lang.String",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.ItinerariesSearchConnectorConfiguration"
+    },
+    {
+      "name": "connector.itineraries-search.read-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.ItinerariesSearchConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.itineraries-search.response-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.ItinerariesSearchConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.pricing.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.PricingConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.pricing.host",
+      "type": "java.lang.String",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.PricingConnectorConfiguration"
+    },
+    {
+      "name": "connector.pricing.read-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.PricingConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.pricing.response-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.clusters.connector.configuration.PricingConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis",
+      "type": "com.twa.flights.api.clusters.configuration.settings.RedisSettings",
+      "sourceType": "com.twa.flights.api.clusters.configuration.RedisConfiguration"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,63 @@
+{
+  "groups": [
+    {
+      "name": "connector.provider-alpha",
+      "type": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderAlphaConnectorConfiguration",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderAlphaConnectorConfiguration"
+    },
+    {
+      "name": "connector.provider-beta",
+      "type": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "connector.provider-alpha.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderAlphaConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.provider-alpha.host",
+      "type": "java.lang.String",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderAlphaConnectorConfiguration"
+    },
+    {
+      "name": "connector.provider-alpha.read-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderAlphaConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.provider-alpha.response-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderAlphaConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.provider-beta.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.provider-beta.host",
+      "type": "java.lang.String",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration"
+    },
+    {
+      "name": "connector.provider-beta.read-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "connector.provider-beta.response-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.twa.flights.api.itineraries.search.connector.configuration.ProviderBetaConnectorConfiguration",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

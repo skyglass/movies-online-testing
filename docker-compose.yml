@@ -2,16 +2,19 @@ version: '3.0'
 services:
   api-catalog:
     build: api-catalog/.
+    platform: linux/amd64
     container_name: api-catalog
     ports:
      - 6070:6070
     restart: always 
     links:
-      - api-catalog-db 
-      
+      - api-catalog-db
+
   api-catalog-db:
     container_name: api-catalog-db
-    image: mysql:5.7
+    image: mysql:8.0.27
+    #image: mysql:5.7.28
+    platform: linux/amd64
     restart: always
     environment:
       MYSQL_DATABASE: 'flights_catalog'
@@ -19,6 +22,7 @@ services:
 
   api-clusters:
     build: api-clusters/.
+    platform: linux/amd64
     container_name: api-clusters
     ports:
      - 4070:4070
@@ -29,17 +33,20 @@ services:
   api-clusters-db:
     container_name: api-clusters-db
     image: redis:alpine
+    platform: linux/amd64
     restart: always
 
   api-itineraries-search:
     build: api-itineraries-search/.
     container_name: api-itineraries-search
+    platform: linux/amd64
     ports:
      - 7070:7070
     restart: always
 
   api-pricing:
     build: api-pricing/.
+    platform: linux/amd64
     container_name: api-pricing
     ports:
      - 5070:5070
@@ -47,7 +54,9 @@ services:
 
   api-pricing-db:
     container_name: api-pricing-db
-    image: mysql:5.7
+    image: mysql:8.0.27
+    #image: mysql:5.7.28
+    platform: linux/amd64
     restart: always
     environment:
       MYSQL_DATABASE: 'flights_pricing'
@@ -55,6 +64,7 @@ services:
 
   api-provider-alpha:
     build: api-provider-alpha/.
+    platform: linux/amd64
     container_name: api-provider-alpha
     ports:
      - 8070:8070
@@ -62,6 +72,7 @@ services:
 
   api-provider-beta:
     build: api-provider-beta/.
+    platform: linux/amd64
     container_name: api-provider-beta
     ports:
      - 9070:9070

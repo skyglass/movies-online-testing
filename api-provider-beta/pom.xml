@@ -5,15 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-		<groupId>com.twa.flights.common</groupId>
+		<groupId>com.twa.flights</groupId>
 		<artifactId>flights-parent</artifactId>
-		<version>1.0.5</version>
-		<relativePath/>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>com.twa.flights</groupId>
 	<artifactId>api-provider-beta</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>api-provider-beta</name>
 	<description>This project search in the provider beta</description>
 
@@ -30,20 +27,17 @@
 		<application.mainClass>com.twa.flights.api.provider.beta.App</application.mainClass>
 
 		<!-- Spring -->
-		<spring-boot.version>2.4.10</spring-boot.version>
+		<spring-boot.version>2.7.2</spring-boot.version>
 
 		<!-- General -->
-		<orika-core.version>1.5.4</orika-core.version>
-		<springdoc-openapi-ui.version>1.5.8</springdoc-openapi-ui.version>
+		<orika-spring-boot-starter.version>2.3.2</orika-spring-boot-starter.version>
+		<springdoc-openapi-ui.version>1.6.9</springdoc-openapi-ui.version>
 		<guava.version>30.1.1-jre</guava.version>
 		<javafaker.version>1.0.2</javafaker.version>
 		<joda-time.version>2.10.10</joda-time.version>
 
-		<!-- TWA -->
-		<flights-common-dto.version>1.0.4</flights-common-dto.version>
-
 		<!-- Maven plugins -->
-		<spring-boot-maven-plugin.version>2.4.10</spring-boot-maven-plugin.version>
+		<spring-boot-maven-plugin.version>2.7.2</spring-boot-maven-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -139,16 +133,16 @@
 		</dependency>
 
 		<dependency>
-			<groupId>ma.glasnost.orika</groupId>
-			<artifactId>orika-core</artifactId>
-			<version>${orika-core.version}</version>
+			<groupId>dev.akkinoc.spring.boot</groupId>
+			<artifactId>orika-spring-boot-starter</artifactId>
+			<version>${orika-spring-boot-starter.version}</version>
 		</dependency>
 
 		<!-- TWA -->
 		<dependency>
-			<groupId>com.twa.flights.common</groupId>
+			<groupId>com.twa.flights</groupId>
 			<artifactId>flights-common-dto</artifactId>
-			<version>${flights-common-dto.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 
 		<!-- Test -->
@@ -201,11 +195,6 @@
     </profiles>
 
 	<repositories>
-		<repository>
-			<id>manning-twa-lib-parent</id>
-			<name>Repository of custom objects</name>
-			<url>https://mymavenrepo.com/repo/tJqfV65wRD0LL9UcK4CQ</url>
-		</repository>
 		<repository>
 			<id>maven2</id>
 			<name>maven2</name>
