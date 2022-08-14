@@ -7,7 +7,7 @@ import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
-import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.fields;
+import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.*;
 
 @AnalyzeClasses(packages = ArchitectureConstants.DEFAULT_PACKAGE, importOptions = ImportOption.DoNotIncludeTests.class)
 class GeneralCodingRulesTest {
@@ -15,7 +15,8 @@ class GeneralCodingRulesTest {
     @ArchTest
     static final ArchRule loggersShouldBePrivateStaticAndFinal = fields().that().haveRawType(Logger.class).should()
             .bePrivate().andShould().beStatic().andShould().beFinal().andShould().haveName("LOGGER")
-            .because("Logger variables should be private, static and final, and it should be named as LOGGER");
+            .because("Logger variables should be private, static and final, and it should be named as LOGGER")
+            .allowEmptyShould(true);
 
     @ArchTest
     static final ArchRule finalStaticVariablesInUppercase = fields().that().areStatic().and().areFinal().and()

@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.twa.flights</groupId>
+		<artifactId>flights-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>flights-architecture-test</artifactId>
+	<version>1.0.5</version>
+
+	<properties>
+		<main.basedir>${project.basedir}</main.basedir>
+
+        <!-- General -->
+		<archunit-junit5.version>0.23.1</archunit-junit5.version>
+        <objenesis.version>2.4</objenesis.version>
+        <junit.version>4.12</junit.version>
+        <junit-platform-engine.version>1.9.0</junit-platform-engine.version>
+
+        <!-- Maven -->
+        <arch-unit-build-plugin-core.version>2.9.6</arch-unit-build-plugin-core.version>
+	</properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.objenesis</groupId>
+                <artifactId>objenesis</artifactId>
+                <version>${objenesis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-engine</artifactId>
+                <version>${junit-platform-engine.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+	<dependencies>
+
+        <dependency>
+            <groupId>com.societegenerale.commons</groupId>
+            <artifactId>arch-unit-build-plugin-core</artifactId>
+            <version>${arch-unit-build-plugin-core.version}</version>
+        </dependency>
+
+		<dependency>
+		    <groupId>com.tngtech.archunit</groupId>
+		    <artifactId>archunit-junit5</artifactId>
+		    <version>${archunit-junit5.version}</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+	  <repository>
+		<id>maven2</id>
+		<name>maven2</name>
+		<url>https://repo.maven.apache.org/maven2</url>
+	   </repository>
+	</repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>flights-architecture-test</id>
+            <name>Repository of flights-architecture-test</name>
+            <url>https://mymavenrepo.com/repo/SRAiJB1RGyqimYwzLMCI/</url>
+        </repository>
+    </distributionManagement>
+</project>

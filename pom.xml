@@ -21,6 +21,7 @@
 
 	<modules>
         <module>commons-dto</module>
+        <module>flights-architecture-test</module>
 		<module>api-catalog</module>
 		<module>api-clusters</module>
 		<module>api-itineraries-search</module>

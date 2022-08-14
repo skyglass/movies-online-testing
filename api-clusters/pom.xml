@@ -35,10 +35,18 @@
 		<guava.version>30.1.1-jre</guava.version>
 
         <!-- Test -->
-        <archunit-junit5.version>0.21.0</archunit-junit5.version>
+        <archunit-junit5.version>0.23.1</archunit-junit5.version>
 
 		<!-- Maven plugins -->
 		<spring-boot-maven-plugin.version>2.7.2</spring-boot-maven-plugin.version>
+
+		<!-- TWA -->
+		<flights-architecture-test.version>1.0.5</flights-architecture-test.version>
+
+		<!-- Maven plugins -->
+		<spring-boot-maven-plugin.version>2.7.2</spring-boot-maven-plugin.version>
+		<arch-unit-maven-plugin.version>2.9.6</arch-unit-maven-plugin.version>
+		<arch-unit-build-plugin-core.version>2.9.6</arch-unit-build-plugin-core.version>
 	</properties>
 
 	<dependencyManagement>
@@ -50,6 +58,28 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+			<dependency>
+				<groupId>com.tngtech.archunit</groupId>
+				<artifactId>archunit-junit5</artifactId>
+				<version>${archunit-junit5.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.tngtech.archunit</groupId>
+				<artifactId>archunit-junit5-api</artifactId>
+				<version>${archunit-junit5.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.tngtech.archunit</groupId>
+				<artifactId>archunit</artifactId>
+				<version>${archunit-junit5.version}</version>
+				<scope>test</scope>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
