@@ -1,0 +1,3 @@
+com/twa/flights/architecture/general/ArchitectureConstants.class
+com/twa/flights/architecture/rules/controller/ControllerShouldBeNameProperlyRuleTest.class
+com/twa/flights/architecture/rules/resources/ResourcesShouldBeNameProperlyRuleTest.class

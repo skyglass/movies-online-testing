@@ -181,12 +181,27 @@
 			</exclusions>
 		</dependency>
 
+		<dependency>
+			<groupId>com.tngtech.archunit</groupId>
+			<artifactId>archunit-junit5-api</artifactId>
+			<version>${archunit-junit5.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+
         <dependency>
             <groupId>com.tngtech.archunit</groupId>
             <artifactId>archunit-junit5</artifactId>
             <version>${archunit-junit5.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.twa.flights.common</groupId>
+            <artifactId>flights-architecture-test</artifactId>
+            <version>${flights-architecture-test.version}</version>
+            <scope>test</scope>
+        </dependency>		
 	</dependencies>
 
 	<build>
@@ -273,11 +288,6 @@
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
-		</repository>
-		<repository>
-			<id>manning-twa-lib-parent</id>
-			<name>Repository of custom objects</name>
-			<url>https://mymavenrepo.com/repo/tJqfV65wRD0LL9UcK4CQ</url>
 		</repository>
 	</repositories>
 </project>
