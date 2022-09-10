@@ -267,7 +267,7 @@
 			<url>https://repo.maven.apache.org/maven2</url>
 		</repository>
 		<repository>
-			<id>skyglass-repo</id>
+			<id>github</id>
 			<url>https://github.com/skyglass/movies-online-repo/master/</url>
 			<releases>
 				<enabled>true</enabled>

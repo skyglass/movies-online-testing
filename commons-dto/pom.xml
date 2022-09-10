@@ -3,16 +3,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.twa.flights</groupId>
-		<artifactId>flights-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-
 	<artifactId>commons-dto</artifactId>
+	<groupId>com.twa.flights</groupId>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
 		<main.basedir>${project.basedir}</main.basedir>
+		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 
 		<!-- General -->
 		<jackson-annotations.version>2.12.3</jackson-annotations.version>
@@ -111,7 +110,7 @@
 				<configuration>
 					<message>Maven artifacts for ${project.version}</message>
 					<noJekyll>true</noJekyll>
-					<outputDirectory>${project.build.directory}</outputDirectory>
+					<outputDirectory>${project.build.directory}/mvn-artifact</outputDirectory>
 					<branch>refs/heads/master</branch>
 					<includes>
 						<include>**/*</include>
