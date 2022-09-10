@@ -34,7 +34,7 @@
         <git-changelog-maven-plugin.version>1.78</git-changelog-maven-plugin.version>
         <git-build-hook-maven-plugin.version>3.0.0</git-build-hook-maven-plugin.version>
 
-        <java.version>17</java.version>
+        <java.version>11</java.version>
         <spring-boot.version>2.7.2</spring-boot.version>
         <resource.delimiter>@</resource.delimiter>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,8 +50,8 @@
         <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
         <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
         <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
 
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
