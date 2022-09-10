@@ -197,7 +197,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.twa.flights.common</groupId>
+            <groupId>com.twa.flights</groupId>
             <artifactId>flights-architecture-test</artifactId>
             <version>${flights-architecture-test.version}</version>
             <scope>test</scope>
