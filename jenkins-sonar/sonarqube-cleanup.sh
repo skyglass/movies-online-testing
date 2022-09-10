@@ -1,0 +1,2 @@
+docker volume rm sonarqube_data sonarqube_logs sonarqube_extensions postgresql postgresql_data
+docker-compose down
