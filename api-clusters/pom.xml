@@ -45,8 +45,8 @@
 
 		<!-- Maven plugins -->
 		<spring-boot-maven-plugin.version>2.7.2</spring-boot-maven-plugin.version>
-		<arch-unit-maven-plugin.version>2.9.6</arch-unit-maven-plugin.version>
-		<arch-unit-build-plugin-core.version>2.9.6</arch-unit-build-plugin-core.version>
+		<arch-unit-maven-plugin.version>2.9.3</arch-unit-maven-plugin.version>
+		<arch-unit-build-plugin-core.version>2.9.3</arch-unit-build-plugin-core.version>
 	</properties>
 
 	<dependencyManagement>
@@ -273,6 +273,11 @@
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
+		</repository>
+		<repository>
+			<id>manning-twa-lib-parent</id>
+			<name>Repository of custom objects</name>
+			<url>https://mymavenrepo.com/repo/tJqfV65wRD0LL9UcK4CQ</url>
 		</repository>
 	</repositories>
 </project>
