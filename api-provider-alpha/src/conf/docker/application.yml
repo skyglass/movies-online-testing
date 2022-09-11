@@ -1,5 +1,10 @@
 management:
   health.db.enabled: false
+  endpoint:
+    chaosmonkey:
+      enabled: true
+    chaosmonkeyjmx:
+      enabled: true
   endpoints:    
     web:
       base-path: /
@@ -18,7 +23,7 @@ jetty:
 
 spring:
   profiles:
-    active: default
+    active: chaos-monkey
     
 connector:
    catalog:
@@ -26,3 +31,10 @@ connector:
       responseTimeout: 1000
       connectionTimeout: 1000
       readTimeout: 1000
+
+chaos:
+  monkey:
+    enabled: false
+    assaults:
+      exceptionsActive: false
+      latencyActive: false

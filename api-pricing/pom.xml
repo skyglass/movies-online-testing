@@ -33,6 +33,7 @@
 		<orika-spring-boot-starter.version>2.3.2</orika-spring-boot-starter.version>
 		<springdoc-openapi-ui.version>1.6.9</springdoc-openapi-ui.version>
 		<guava.version>30.1.1-jre</guava.version>
+		<chaos-monkey-spring-boot.version>2.5.4</chaos-monkey-spring-boot.version>		
 
 		<!-- Maven plugins -->
 		<spring-boot-maven-plugin.version>2.7.2</spring-boot-maven-plugin.version>
@@ -132,7 +133,12 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-mysql</artifactId>
 		</dependency>
-		
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>chaos-monkey-spring-boot</artifactId>
+            <version>${chaos-monkey-spring-boot.version}</version>
+        </dependency>					
 		
 		<!-- TWA -->		
 		<dependency>

@@ -35,6 +35,7 @@
 		<guava.version>30.1.1-jre</guava.version>
 		<javafaker.version>1.0.2</javafaker.version>
 		<joda-time.version>2.10.10</joda-time.version>
+		<chaos-monkey-spring-boot.version>2.5.4</chaos-monkey-spring-boot.version>
 
 		<!-- Maven plugins -->
 		<spring-boot-maven-plugin.version>2.7.2</spring-boot-maven-plugin.version>
@@ -137,6 +138,12 @@
 			<artifactId>orika-spring-boot-starter</artifactId>
 			<version>${orika-spring-boot-starter.version}</version>
 		</dependency>
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>chaos-monkey-spring-boot</artifactId>
+            <version>${chaos-monkey-spring-boot.version}</version>
+        </dependency>		
 
 		<!-- TWA -->
 		<dependency>

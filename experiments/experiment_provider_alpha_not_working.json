@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0",
+  "title": "Obtain flights without one of the providers",
+  "description": "The idea is simulate random problems in the api-pricing",
+  "tags": ["spring"],
+  "steady-state-hypothesis": {
+    "title": "Obtain obtain itineraries if increment the latency",
+    "probes": [
+      {
+        "type": "probe",
+        "name": "obtain_flights",
+        "tolerance": 200,
+        "provider": {
+          "type": "http",
+          "url": "http://localhost:4070/api/flights/clusters/itineraries?from=BUE,MIA&to=MIA,BUE&departure=2022-05-29,2022-06-03&adults=1&children=1&infants=1&amount=10"
+        }
+      }
+    ]
+  },
+  "method": [
+    {
+      "name": "enable_chaosmonkey",
+      "provider": {
+        "arguments": {
+          "base_url": "http://localhost:8070/api/flights/provider/alpha"
+        },
+        "func": "enable_chaosmonkey",
+        "module": "chaosspring.actions",
+        "type": "python"
+      },
+      "type": "action"
+    },
+    {
+      "name": "configure_assaults",
+      "provider": {
+        "arguments": {
+          "base_url": "http://localhost:8070/api/flights/provider/alpha",
+          "assaults_configuration": {
+            "level": 1,
+            "latencyActive": false,
+            "latencyRangeStart": 1000,
+            "latencyRangeEnd": 3000,
+            "exceptionsActive": true
+          }
+        },
+        "func": "change_assaults_configuration",
+        "module": "chaosspring.actions",
+        "type": "python"
+      },
+      "type": "action"
+    },
+    {
+      "name": "configure_watcher",
+      "provider": {
+        "type": "http",
+        "url": "http://localhost:8070/api/flights/provider/alpha/chaosmonkey/watchers",
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "arguments": {
+          "controller": false,
+          "restController": true,
+          "service": false,
+          "repository": false,
+          "component": false
+        }
+      },
+      "type": "action"
+    },
+    {
+      "type": "probe",
+      "name": "obtain_flights",
+      "tolerance": 200,
+      "provider": {
+        "type": "http",
+        "url": "http://localhost:4070/api/flights/clusters/itineraries?from=BUE,MIA&to=MIA,BUE&departure=2022-05-29,2022-06-03&adults=1&children=1&infants=1&amount=10"
+      }
+    }
+  ],
+  "rollbacks": [
+    {
+      "name": "disable_chaosmonkey",
+      "provider": {
+        "arguments": {
+          "base_url": "http://localhost:8070/api/flights/provider/alpha"
+        },
+        "func": "disable_chaosmonkey",
+        "module": "chaosspring.actions",
+        "type": "python"
+      },
+      "type": "action"
+    }
+  ]
+}
